@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<FormatTypeFile>
+  <FormatType type="1">
+    <Format unitName="ft" precision="2" />
+    <Format unitName="m" precision="3" />
+  </FormatType>
+  <FormatType type="2">
+    <Format unitName="ft" precision="3" />
+    <Format unitName="m" precision="4" />
+  </FormatType>
+  <FormatType type="3">
+    <Format unitName="nT" precision="0" />
+  </FormatType>
+  <FormatType type="4">
+    <Format unitName="°" precision="3" />
+  </FormatType>
+  <FormatType type="5">
+    <Format unitName="g" precision="4" />
+  </FormatType>
+  <FormatType type="6">
+    <Format unitName="g" precision="5" />
+  </FormatType>
+  <FormatType type="7">
+    <Format unitName="°F" precision="1" />
+    <Format unitName="°C" precision="1" />
+  </FormatType>
+  <FormatType type="8">
+    <Format unitName="°" precision="2" />
+  </FormatType>
+  <FormatType type="9">
+    <Format unitName="nT/ft^2" precision="0" />
+    <Format unitName="nT/m^2" precision="0" />
+  </FormatType>
+  <FormatType type="10">
+    <Format unitName="1/ft" precision="4" />
+    <Format unitName="1/m" precision="4" />
+  </FormatType>
+  <FormatType type="11">
+    <Format unitName="ft^2" precision="0" />
+    <Format unitName="m^2" precision="0" />
+  </FormatType>
+  <FormatType type="12">
+    <Format unitName="inches" precision="2" />
+    <Format unitName="cm" precision="3" />
+  </FormatType>
+  <FormatType type="13">
+    <Format unitName="lb/ft^3" precision="0" />
+    <Format unitName="kg/m^3" precision="0" />
+  </FormatType>
+  <FormatType type="14">
+    <Format unitName="milliG" precision="3" />
+  </FormatType>
+  <FormatType type="15">
+    <Format unitName="mg" precision="4" />
+  </FormatType>
+  <FormatType type="16">
+    <Format unitName="%" precision="4" />
+  </FormatType>
+  <FormatType type="17">
+    <Format unitName="%" precision="3" />
+  </FormatType>
+  <FormatType type="18">
+    <Format unitName="nT" precision="4" />
+  </FormatType>
+  <FormatType type="19">
+    <Format unitName="g" precision="6" />
+  </FormatType>
+  <FormatType type="20">
+    <Format unitName="ft" precision="2" />
+  </FormatType>
+  <FormatType type="21">
+    <Format unitName="g" precision="2" />
+  </FormatType>
+  <FormatType type="22">
+    <Format unitName="g" precision="3" />
+  </FormatType>
+  <FormatType type="23">
+    <Format unitName="g" precision="2" />
+  </FormatType>
+  <FormatType type="24">
+    <Format unitName="°" precision="0" />
+  </FormatType>
+  <FormatType type="25">
+    <Format unitName="nT" precision="3" />
+  </FormatType>
+  <FormatType type="26">
+    <Format unitName="m" precision="4" />
+  </FormatType>
+  <FormatType type="27">
+    <Format unitName="ft" precision="4" />
+    <Format unitName="m" precision="4" />
+  </FormatType>
+  <FormatType type="28">
+    <Format  precision="0" />
+  </FormatType>
+  <FormatType type="29">
+    <Format unitName="unitlessNoPrecision" precision="0" />
+  </FormatType>
+  <FormatType type="30">
+    <Format unitName="unitlessTwoPrecision" precision="2" />
+  </FormatType>
+  <FormatType type="31">
+    <Format unitName="unitlessFourPrecision" precision="4" />
+  </FormatType>
+
+</FormatTypeFile>

@@ -1,0 +1,264 @@
+{
+  "RangeValidation": [
+    {
+      "HeaderName": "Gx Raw",
+      "ErrorMessage": "The valid range for \"Gx Raw\" is -1.6 to 1.6",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "-1.6",
+      "EndValue": "1.6"
+    },
+    {
+      "HeaderName": "Gy Raw",
+      "ErrorMessage": "The valid range for \"Gy Raw\" is -1.6 to 1.6",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "-1.6",
+      "EndValue": "1.6"
+    },
+    {
+      "HeaderName": "Gz Raw",
+      "ErrorMessage": "The valid range for \"Gz Raw\" is -1.6 to 1.6",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "-1.6",
+      "EndValue": "1.6"
+    },
+    {
+      "HeaderName": "Bx Raw",
+      "ErrorMessage": "The valid range for \"Bx Raw\" is -68000 to 68000",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "-68000",
+      "EndValue": "68000"
+    },
+    {
+      "HeaderName": "By Raw",
+      "ErrorMessage": "The valid range for \"By Raw\" is -68000 to 68000",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "-68000",
+      "EndValue": "68000"
+    },
+    {
+      "HeaderName": "Bz Raw",
+      "ErrorMessage": "The valid range for \"Bz Raw\" is -68000 to 68000",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "-68000",
+      "EndValue": "68000"
+    },
+    {
+      "HeaderName": "Sag Inc",
+      "ErrorMessage": "The valid range for \"Sag Inc\" is 0 to 180",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "0",
+      "EndValue": "180"
+    },
+    {
+      "HeaderName": "MWD Inc",
+      "ErrorMessage": "The valid range for \"MWD Inc\" is 0 to 180",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "0",
+      "EndValue": "180"
+    },
+    {
+      "HeaderName": "MWD SC",
+      "ErrorMessage": "The valid range for \"MWD SC\" is 0 to 360",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "0",
+      "EndValue": "360"
+    },
+    {
+      "HeaderName": "MWD LC",
+      "ErrorMessage": "The valid range for \"MWD LC\" is 0 to 360",
+      "BackgroundColor": "RangeValidationBackgroundBrush",
+      "ForegroundColor": "RangeValidationForegroundBrush",
+      "StartValue": "0",
+      "EndValue": "360"
+    }
+  ],
+  "OptionListValidation": [
+    {
+      "HeaderName": "Azimuth Type",
+      "ErrorMessage": "Illegal value for \"Azimuth Type\"",
+      "BackgroundColor": "OptionListValidationBackgroundBrush",
+      "ForegroundColor": "OptionListValidationForegroundBrush",
+      "ListOptions": [
+        "LC",
+        "SC",
+        "Long Collar",
+        "Short Collar",
+        "LongCollar",
+        "ShortCollar",
+        "0",
+        "1",
+        "NA"
+      ]
+    },
+    {
+      "HeaderName": "Enabled",
+      "ErrorMessage": "Illegal value for \"Enabled\"",
+      "BackgroundColor": "OptionListValidationBackgroundBrush",
+      "ForegroundColor": "OptionListValidationForegroundBrush",
+      "ListOptions": [
+        "Yes",
+        "No",
+        "True",
+        "False",
+        "1",
+        "0"
+      ]
+    },
+    {
+      "HeaderName": "Pump Status",
+      "ErrorMessage": "Illegal value for \"Pump Status\"",
+      "BackgroundColor": "OptionListValidationBackgroundBrush",
+      "ForegroundColor": "OptionListValidationForegroundBrush",
+      "ListOptions": [
+        "On",
+        "Yes",
+        "Up",
+        "1",
+        "Off",
+        "No",
+        "Down",
+        "0",
+        "NA"
+      ]
+    }
+  ],
+  "DuplicateValidation": [
+    {
+      "HeaderName": "Date&Time",
+      "ErrorMessage": "Duplicate \"DateTime\" value",
+      "BackgroundColor": "DuplicateValidationBackgroundBrush",
+      "ForegroundColor": "DuplicateValidationForegroundBrush"
+    }
+  ],
+  "TypeCheckValidation": [
+    {
+      "HeaderName": "Date&Time",
+      "ErrorMessage": "Illegal value for \"DateTime\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.DateTime"
+    },
+    {
+      "HeaderName": "Gx Raw",
+      "ErrorMessage": "Illegal value for \"Gx Raw\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Gy Raw",
+      "ErrorMessage": "Illegal value for \"Gy Raw\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Gz Raw",
+      "ErrorMessage": "Illegal value for \"Gz Raw\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Bx Raw",
+      "ErrorMessage": "Illegal value for \"Bx Raw\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "By Raw",
+      "ErrorMessage": "Illegal value for \"By Raw\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Bz Raw",
+      "ErrorMessage": "Illegal value for \"Bz Raw\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Sag Inc",
+      "ErrorMessage": "Illegal value for \"Sag Inc.\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "MWD Inc",
+      "ErrorMessage": "Illegal value for \"MWD Inc.\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "MWD SC",
+      "ErrorMessage": "Illegal value for \"MWD SC\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "MWD LC",
+      "ErrorMessage": "Illegal value for \"MWD LC\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Depth",
+      "ErrorMessage": "Illegal value for \"Depth\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Temperature",
+      "ErrorMessage": "Illegal value for \"Temperature\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.Double"
+    },
+    {
+      "HeaderName": "Survey Time Offset",
+      "ErrorMessage": "Illegal value for \"Survey Time Offset\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.long"
+    },
+    {
+      "HeaderName": "Run",
+      "ErrorMessage": "Illegal value for \"Run\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.String"
+    },
+    {
+      "HeaderName": "Serial Number",
+      "ErrorMessage": "Illegal value for \"Serial Number\"",
+      "BackgroundColor": "TypeCheckValidationBackgroundBrush",
+      "ForegroundColor": "TypeCheckValidationForegroundBrush",
+      "ValueDataType": "System.String"
+    }
+  ],
+  "ValueChangedValidation": [
+    {
+      "HeaderName": "ALL",
+      "ErrorMessage": "Current database is value {0}, this will be changed to {1}",
+      "BackgroundColor": "CellValueChangedValidationBackgroundBrush",
+      "ForegroundColor": "CellValueChangedValidationForegroundBrush"
+    }
+  ]
+}

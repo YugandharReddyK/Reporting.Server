@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sperry.MxS.Reporting.Server", "Sperry.MxS.Reporting.Server\Sperry.MxS.Reporting.Server.csproj", "{8D63B1B0-856F-4C56-8F05-93E2AE5B93DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sperry.MxS.Reporting.Common", "Sperry.MxS.Reporting.Common\Sperry.MxS.Reporting.Common.csproj", "{253B361B-0A17-4792-8540-7333C1643681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sperry.MxS.Reporting.Infrastructure", "Sperry.MxS.Reporting.Infrastructure\Sperry.MxS.Reporting.Infrastructure.csproj", "{FE48B8E3-0F15-472E-9BB5-96A8DDE37C63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sperry.MxS.Reporting.ReportDoc", "Sperry.MxS.Reporting.ReportDoc\Sperry.MxS.Reporting.ReportDoc.csproj", "{8B224DEB-BDB4-46FF-B955-171287798782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sperry.MxS.Reporting.Services", "Sperry.MxS.Reporting.Services\Sperry.MxS.Reporting.Services.csproj", "{1805B1E3-84F1-4BBD-86CD-B2E21DD928F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sperry.MxS.Reporting.Control", "Sperry.MxS.Reporting.Control\Sperry.MxS.Reporting.Control.csproj", "{06461698-E407-4D1D-BA87-7C13C4EBCAE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D63B1B0-856F-4C56-8F05-93E2AE5B93DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D63B1B0-856F-4C56-8F05-93E2AE5B93DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D63B1B0-856F-4C56-8F05-93E2AE5B93DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D63B1B0-856F-4C56-8F05-93E2AE5B93DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253B361B-0A17-4792-8540-7333C1643681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253B361B-0A17-4792-8540-7333C1643681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253B361B-0A17-4792-8540-7333C1643681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253B361B-0A17-4792-8540-7333C1643681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE48B8E3-0F15-472E-9BB5-96A8DDE37C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE48B8E3-0F15-472E-9BB5-96A8DDE37C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE48B8E3-0F15-472E-9BB5-96A8DDE37C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE48B8E3-0F15-472E-9BB5-96A8DDE37C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B224DEB-BDB4-46FF-B955-171287798782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B224DEB-BDB4-46FF-B955-171287798782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B224DEB-BDB4-46FF-B955-171287798782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B224DEB-BDB4-46FF-B955-171287798782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1805B1E3-84F1-4BBD-86CD-B2E21DD928F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1805B1E3-84F1-4BBD-86CD-B2E21DD928F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1805B1E3-84F1-4BBD-86CD-B2E21DD928F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1805B1E3-84F1-4BBD-86CD-B2E21DD928F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06461698-E407-4D1D-BA87-7C13C4EBCAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06461698-E407-4D1D-BA87-7C13C4EBCAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06461698-E407-4D1D-BA87-7C13C4EBCAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06461698-E407-4D1D-BA87-7C13C4EBCAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2E7DB47-66EB-4AE4-9488-D2F543D7FF21}
+	EndGlobalSection
+EndGlobal

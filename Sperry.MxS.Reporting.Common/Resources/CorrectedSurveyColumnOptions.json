@@ -1,0 +1,1692 @@
+[
+  {
+    "$id": "1",
+    "Order": 0,
+    "FriendlyName": "Status",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.SurveyStatus",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "2",
+    "Order": 1,
+    "FriendlyName": "ASA",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.ASAResult",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "3",
+    "Order": 2,
+    "FriendlyName": "ASA Status",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ASAStatusEnum",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "4",
+    "Order": 3,
+    "FriendlyName": "ASA Mode",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ASAMode",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "5",
+    "Order": 4,
+    "FriendlyName": "Type",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.SurveyType",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "6",
+    "Order": 5,
+    "FriendlyName": "Run",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.RawSurvey.Run.RunNumber",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "7",
+    "Order": 6,
+    "FriendlyName": "Depth",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.Depth",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "8",
+    "Order": 7,
+    "FriendlyName": "Time&Date",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.DateTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "9",
+    "Order": 8,
+    "FriendlyName": "SISA",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.SISA",
+    "UnitName": "",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "10",
+    "Order": 9,
+    "FriendlyName": "Gx Raw",
+    "Visible": true,
+    "Variable": "Gx",
+    "UnitName": "g",
+    "FormatType": 6,
+    "IsFrozen": false
+  },
+  {
+    "$id": "11",
+    "Order": 10,
+    "FriendlyName": "Gy Raw",
+    "Visible": true,
+    "Variable": "Gy",
+    "UnitName": "g",
+    "FormatType": 6,
+    "IsFrozen": false
+  },
+  {
+    "$id": "12",
+    "Order": 11,
+    "FriendlyName": "Gz Raw",
+    "Visible": true,
+    "Variable": "Gz",
+    "UnitName": "g",
+    "FormatType": 6,
+    "IsFrozen": false
+  },
+  {
+    "$id": "13",
+    "Order": 12,
+    "FriendlyName": "Bx Raw",
+    "Visible": true,
+    "Variable": "Bx",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "14",
+    "Order": 13,
+    "FriendlyName": "By Raw",
+    "Visible": true,
+    "Variable": "By",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "15",
+    "Order": 14,
+    "FriendlyName": "Bz Raw",
+    "Visible": true,
+    "Variable": "Bz",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "16",
+    "Order": 15,
+    "FriendlyName": "Rig Inc",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.RigInclination",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "17",
+    "Order": 16,
+    "FriendlyName": "MWD Inc",
+    "Visible": true,
+    "Variable": "MWDInclination",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "18",
+    "Order": 17,
+    "FriendlyName": "Sag Inc",
+    "Visible": true,
+    "Variable": "SagInclination",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "19",
+    "Order": 18,
+    "FriendlyName": "MWD SC",
+    "Visible": true,
+    "Variable": "MWDShortCollar",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "20",
+    "Order": 19,
+    "FriendlyName": "Rig SC",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.RigAzimuthSC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "21",
+    "Order": 20,
+    "FriendlyName": "MWD LC",
+    "Visible": true,
+    "Variable": "MWDLongCollar",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "22",
+    "Order": 21,
+    "FriendlyName": "Rig LC",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.RigAzimuthLC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "23",
+    "Order": 22,
+    "FriendlyName": "Pumps",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.PumpStatus",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "24",
+    "Order": 23,
+    "FriendlyName": "Serial Number",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.RawSurvey.Run.SerialNumber",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "25",
+    "Order": 24,
+    "FriendlyName": "Last Edited By",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.LastEditedBy",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "26",
+    "Order": 25,
+    "FriendlyName": "Type Edited By ",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.TypeEditedBy",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "27",
+    "Order": 26,
+    "FriendlyName": "Toolface Offset",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.Solution.Run.ToolfaceOffset",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "28",
+    "Order": 27,
+    "FriendlyName": "Temperature",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.RawSurvey.Temperature",
+    "UnitName": "°F",
+    "FormatType": 7,
+    "IsFrozen": false
+  },
+  {
+    "$id": "29",
+    "Order": 28,
+    "FriendlyName": "Comment",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.Comment",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "30",
+    "Order": 29,
+    "FriendlyName": "Nom Gt",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.NomGt",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "31",
+    "Order": 30,
+    "FriendlyName": "Nom Bt",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.NomBt",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "32",
+    "Order": 31,
+    "FriendlyName": "Nom Dip",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.NomDip",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "33",
+    "Order": 32,
+    "FriendlyName": "Nom BtDip",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.NomBtDip",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "34",
+    "Order": 33,
+    "FriendlyName": "Service",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.AppliedService",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "35",
+    "Order": 34,
+    "FriendlyName": "Azimuth Solution",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.AppliedCazandraSolution",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "36",
+    "Order": 35,
+    "FriendlyName": "Inclination Solution",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.AppliedIcarusSolution",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "37",
+    "Order": 36,
+    "FriendlyName": "Gt QC Delta",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.GtQcDelta",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "38",
+    "Order": 37,
+    "FriendlyName": "Bt QC Delta",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.BtQcDelta",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "39",
+    "Order": 38,
+    "FriendlyName": "Dip QC Delta",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.DipQcDelta",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "40",
+    "Order": 39,
+    "FriendlyName": "BtDip QC Delta",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.BtDipQcDelta",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "41",
+    "Order": 40,
+    "FriendlyName": "Survey Time Offset (hh:mm:ss)",
+    "Visible": false,
+    "Variable": "RigTimeOffset",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "42",
+    "Order": 41,
+    "FriendlyName": "Atomic Survey Time [UTC +05:30]",
+    "Visible": false,
+    "Variable": "AtomicRigTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "43",
+    "Order": 42,
+    "FriendlyName": "Manual Rig Time Offset",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ManualTimeOffsetFlag",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "44",
+    "Order": 43,
+    "FriendlyName": "ToolFace Gravity",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.GravityToolFace",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "45",
+    "Order": 44,
+    "FriendlyName": "Nom Dec",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.NomDeclination",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "46",
+    "Order": 45,
+    "FriendlyName": "Nom Grid",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.NomGrid",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "47",
+    "Order": 46,
+    "FriendlyName": "Gt Raw QC",
+    "Visible": false,
+    "Variable": "GtRawQC",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "48",
+    "Order": 47,
+    "FriendlyName": "Azi Type",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.AzimuthType",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "49",
+    "Order": 48,
+    "FriendlyName": "Bt Measured",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BtMeasured",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "50",
+    "Order": 49,
+    "FriendlyName": "Dip Measured",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.DipMeasured",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "51",
+    "Order": 50,
+    "FriendlyName": "Bv Measured",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BvMeasured",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "52",
+    "Order": 51,
+    "FriendlyName": "Bh Measured",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BhMeasured",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "53",
+    "Order": 52,
+    "FriendlyName": "Raw Gxyz Inc",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.GxyzInclination",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "54",
+    "Order": 53,
+    "FriendlyName": "Raw Gxy Inc",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.GxyInclination",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "55",
+    "Order": 54,
+    "FriendlyName": "Raw Gz Inc",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.GzInclination",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "56",
+    "Order": 55,
+    "FriendlyName": "MFM LC",
+    "Visible": false,
+    "Variable": "MFMLC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "57",
+    "Order": 56,
+    "FriendlyName": "MFM SC",
+    "Visible": false,
+    "Variable": "MFMSC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "58",
+    "Order": 57,
+    "FriendlyName": "MFM N/S",
+    "Visible": false,
+    "Variable": "MFMNS",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "59",
+    "Order": 58,
+    "FriendlyName": "MFM E/W",
+    "Visible": false,
+    "Variable": "MFMEW",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "60",
+    "Order": 59,
+    "FriendlyName": "MFM TVD",
+    "Visible": false,
+    "Variable": "MFMTVD",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "61",
+    "Order": 60,
+    "FriendlyName": "MFM Bt",
+    "Visible": false,
+    "Variable": "MFMBt",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "62",
+    "Order": 61,
+    "FriendlyName": "MFM Dip",
+    "Visible": false,
+    "Variable": "MFMDip",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "63",
+    "Order": 62,
+    "FriendlyName": "MFM Bv",
+    "Visible": false,
+    "Variable": "MFMBv",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "64",
+    "Order": 63,
+    "FriendlyName": "MFM Bh",
+    "Visible": false,
+    "Variable": "MFMBh",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "65",
+    "Order": 64,
+    "FriendlyName": "MFM Bt Bz Calc",
+    "Visible": false,
+    "Variable": "MFMBtBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "66",
+    "Order": 65,
+    "FriendlyName": "MFM Dip Bz Calc",
+    "Visible": false,
+    "Variable": "MFMDipBzCalc",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "67",
+    "Order": 66,
+    "FriendlyName": "MFM BtDip Bz Calc",
+    "Visible": false,
+    "Variable": "MFMBtDipBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "68",
+    "Order": 67,
+    "FriendlyName": "MFM BtDip Bz Measured",
+    "Visible": false,
+    "Variable": "MFMBtDipBzMeasured",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "69",
+    "Order": 68,
+    "FriendlyName": "MFM Bv Bz Calc",
+    "Visible": false,
+    "Variable": "MFMBvBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "70",
+    "Order": 69,
+    "FriendlyName": "MFM Bh Bz Calc",
+    "Visible": false,
+    "Variable": "MFMBhBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "71",
+    "Order": 70,
+    "FriendlyName": "MFM Bz Calc",
+    "Visible": false,
+    "Variable": "MFMBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "72",
+    "Order": 71,
+    "FriendlyName": "IFR1 LC",
+    "Visible": false,
+    "Variable": "IFR1LC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "73",
+    "Order": 72,
+    "FriendlyName": "IFR1 SC",
+    "Visible": false,
+    "Variable": "IFR1SC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "74",
+    "Order": 73,
+    "FriendlyName": "IFR1 N/S",
+    "Visible": false,
+    "Variable": "IFR1NS",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "75",
+    "Order": 74,
+    "FriendlyName": "IFR1 E/W",
+    "Visible": false,
+    "Variable": "IFR1EW",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "76",
+    "Order": 75,
+    "FriendlyName": "IFR1 TVD",
+    "Visible": false,
+    "Variable": "IFR1TVD",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "77",
+    "Order": 76,
+    "FriendlyName": "IFR1 Bt",
+    "Visible": false,
+    "Variable": "IFR1Bt",
+    "UnitName": "",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "78",
+    "Order": 77,
+    "FriendlyName": "IFR1 Dip",
+    "Visible": false,
+    "Variable": "IFR1Dip",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "79",
+    "Order": 78,
+    "FriendlyName": "IFR1 Bv",
+    "Visible": false,
+    "Variable": "IFR1Bv",
+    "UnitName": "",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "80",
+    "Order": 79,
+    "FriendlyName": "IFR1 Bh",
+    "Visible": false,
+    "Variable": "IFR1Bh",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "81",
+    "Order": 80,
+    "FriendlyName": "IFR1 Bt Bz Calc",
+    "Visible": false,
+    "Variable": "IFR1BtBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "82",
+    "Order": 81,
+    "FriendlyName": "IFR1 Dip Bz Calc",
+    "Visible": false,
+    "Variable": "IFR1DipBzCalc",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "83",
+    "Order": 82,
+    "FriendlyName": "IFR1 BtDip Bz Calc",
+    "Visible": false,
+    "Variable": "IFR1BtDipBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "84",
+    "Order": 83,
+    "FriendlyName": "IFR1 BtDip Bz Measured",
+    "Visible": false,
+    "Variable": "IFR1BtDipBzMeasured",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "85",
+    "Order": 84,
+    "FriendlyName": "IFR1 Bv Bz Calc",
+    "Visible": false,
+    "Variable": "IFR1BvBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "86",
+    "Order": 85,
+    "FriendlyName": "IFR1 Bh Bz Calc",
+    "Visible": false,
+    "Variable": "IFR1BhBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "87",
+    "Order": 86,
+    "FriendlyName": "IFR1 Bz Calc",
+    "Visible": false,
+    "Variable": "IFR1BzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "88",
+    "Order": 87,
+    "FriendlyName": "IFR2 LC",
+    "Visible": false,
+    "Variable": "IFR2LC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "89",
+    "Order": 88,
+    "FriendlyName": "IFR2 SC",
+    "Visible": false,
+    "Variable": "IFR2SC",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "90",
+    "Order": 89,
+    "FriendlyName": "IFR2 N/S",
+    "Visible": false,
+    "Variable": "IFR2NS",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "91",
+    "Order": 90,
+    "FriendlyName": "IFR2 E/W",
+    "Visible": false,
+    "Variable": "IFR2EW",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "92",
+    "Order": 91,
+    "FriendlyName": "IFR2 TVD",
+    "Visible": false,
+    "Variable": "IFR2TVD",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "93",
+    "Order": 92,
+    "FriendlyName": "IFR2 Bt",
+    "Visible": false,
+    "Variable": "IFR2Bt",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "94",
+    "Order": 93,
+    "FriendlyName": "IFR2 Dip",
+    "Visible": false,
+    "Variable": "IFR2Dip",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "95",
+    "Order": 94,
+    "FriendlyName": "IFR2 Bv",
+    "Visible": false,
+    "Variable": "IFR2Bv",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "96",
+    "Order": 95,
+    "FriendlyName": "IFR2 Bh",
+    "Visible": false,
+    "Variable": "IFR2Bh",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "97",
+    "Order": 96,
+    "FriendlyName": "IFR2 Bt Bz Calc",
+    "Visible": false,
+    "Variable": "IFR2BtBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "98",
+    "Order": 97,
+    "FriendlyName": "IFR2 Dip Bz Calc",
+    "Visible": false,
+    "Variable": "IFR2DipBzCalc",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "99",
+    "Order": 98,
+    "FriendlyName": "IFR2 BtDip Bz Calc",
+    "Visible": false,
+    "Variable": "IFR2BtDipBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "100",
+    "Order": 99,
+    "FriendlyName": "IFR2 BtDip Bz Measured",
+    "Visible": false,
+    "Variable": "IFR2BtDipBzMeasured",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "101",
+    "Order": 100,
+    "FriendlyName": "IFR2 Bv Bz Calc",
+    "Visible": false,
+    "Variable": "IFR2BvBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "102",
+    "Order": 101,
+    "FriendlyName": "IFR2 Bh Bz Calc",
+    "Visible": false,
+    "Variable": "IFR2BhBzCalc",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "103",
+    "Order": 102,
+    "FriendlyName": "IFR2 Bz Calc",
+    "Visible": false,
+    "Variable": "IFR2BzCalc",
+    "UnitName": "",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "104",
+    "Order": 103,
+    "FriendlyName": "Obs Bt Raw",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ObservatoryBTRaw",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "105",
+    "Order": 104,
+    "FriendlyName": "Obs Dip Raw",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ObservatoryDipRaw",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "106",
+    "Order": 105,
+    "FriendlyName": "Obs Dec Raw",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ObservatoryDecRaw",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "107",
+    "Order": 106,
+    "FriendlyName": "Obs Time&Date Raw [UTC +05:30]",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.ObservatoryDateTimeRaw",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "108",
+    "Order": 107,
+    "FriendlyName": "IPM Code",
+    "Visible": false,
+    "Variable": "Ipm",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "109",
+    "Order": 108,
+    "FriendlyName": "Sigma",
+    "Visible": false,
+    "Variable": "Sigma",
+    "UnitName": "",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "110",
+    "Order": 109,
+    "FriendlyName": "Ica Gxyz Inc",
+    "Visible": false,
+    "Variable": "IcaGxyzInc",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "111",
+    "Order": 110,
+    "FriendlyName": "Ica Gx",
+    "Visible": false,
+    "Variable": "IcaGx",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "112",
+    "Order": 111,
+    "FriendlyName": "Ica Gy",
+    "Visible": false,
+    "Variable": "IcaGy",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "113",
+    "Order": 112,
+    "FriendlyName": "Ica Gz",
+    "Visible": false,
+    "Variable": "IcaGz",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "114",
+    "Order": 113,
+    "FriendlyName": "Ica Gt",
+    "Visible": false,
+    "Variable": "IcaGt",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "115",
+    "Order": 114,
+    "FriendlyName": "Ica Goxy",
+    "Visible": false,
+    "Variable": "IcaGoxy",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "116",
+    "Order": 115,
+    "FriendlyName": "Ica dGx",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.IcadGx",
+    "UnitName": "g",
+    "FormatType": 6,
+    "IsFrozen": false
+  },
+  {
+    "$id": "117",
+    "Order": 116,
+    "FriendlyName": "Ica dGy",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.IcadGy",
+    "UnitName": "g",
+    "FormatType": 6,
+    "IsFrozen": false
+  },
+  {
+    "$id": "118",
+    "Order": 117,
+    "FriendlyName": "Ica dGz",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.IcadGz",
+    "UnitName": "g",
+    "FormatType": 6,
+    "IsFrozen": false
+  },
+  {
+    "$id": "119",
+    "Order": 118,
+    "FriendlyName": "Ica SGx",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.IcaSFGx",
+    "UnitName": "%",
+    "FormatType": 17,
+    "IsFrozen": false
+  },
+  {
+    "$id": "120",
+    "Order": 119,
+    "FriendlyName": "Ica SGy",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.IcaSFGy",
+    "UnitName": "%",
+    "FormatType": 17,
+    "IsFrozen": false
+  },
+  {
+    "$id": "121",
+    "Order": 120,
+    "FriendlyName": "Caz Az",
+    "Visible": false,
+    "Variable": "CazAz",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "122",
+    "Order": 121,
+    "FriendlyName": "Caz N/S",
+    "Visible": false,
+    "Variable": "CazNS",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "123",
+    "Order": 122,
+    "FriendlyName": "Caz E/W",
+    "Visible": false,
+    "Variable": "CazEW",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "124",
+    "Order": 123,
+    "FriendlyName": "Caz TVD",
+    "Visible": false,
+    "Variable": "CazTVD",
+    "UnitName": "ft",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "125",
+    "Order": 124,
+    "FriendlyName": "Caz Bt",
+    "Visible": false,
+    "Variable": "CazBt",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "126",
+    "Order": 125,
+    "FriendlyName": "Caz Dip",
+    "Visible": false,
+    "Variable": "CazDip",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "127",
+    "Order": 126,
+    "FriendlyName": "Caz BtDip",
+    "Visible": false,
+    "Variable": "CazBtDip",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "128",
+    "Order": 127,
+    "FriendlyName": "Caz Bv",
+    "Visible": false,
+    "Variable": "CazBv",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "129",
+    "Order": 128,
+    "FriendlyName": "Caz Bh",
+    "Visible": false,
+    "Variable": "CazBh",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "130",
+    "Order": 129,
+    "FriendlyName": "Caz Bx",
+    "Visible": false,
+    "Variable": "CazBx",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "131",
+    "Order": 130,
+    "FriendlyName": "Caz By",
+    "Visible": false,
+    "Variable": "CazBy",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "132",
+    "Order": 131,
+    "FriendlyName": "Caz Bz",
+    "Visible": false,
+    "Variable": "CazBz",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "133",
+    "Order": 132,
+    "FriendlyName": "Caz Boxy",
+    "Visible": false,
+    "Variable": "CazBoxy",
+    "UnitName": "",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "134",
+    "Order": 133,
+    "FriendlyName": "Caz dBx",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.CazdBx",
+    "UnitName": "nT",
+    "FormatType": 24,
+    "IsFrozen": false
+  },
+  {
+    "$id": "135",
+    "Order": 134,
+    "FriendlyName": "Caz dBy",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.CazdBy",
+    "UnitName": "nT",
+    "FormatType": 24,
+    "IsFrozen": false
+  },
+  {
+    "$id": "136",
+    "Order": 135,
+    "FriendlyName": "Caz dBz",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.CazdBz",
+    "UnitName": "nT",
+    "FormatType": 24,
+    "IsFrozen": false
+  },
+  {
+    "$id": "137",
+    "Order": 136,
+    "FriendlyName": "Caz SBx",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.CazSFBx",
+    "UnitName": "%",
+    "FormatType": 17,
+    "IsFrozen": false
+  },
+  {
+    "$id": "138",
+    "Order": 137,
+    "FriendlyName": "Caz SBy",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.CazSFBy",
+    "UnitName": "%",
+    "FormatType": 17,
+    "IsFrozen": false
+  },
+  {
+    "$id": "139",
+    "Order": 138,
+    "FriendlyName": "Solution Inc",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.SolInc",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "140",
+    "Order": 139,
+    "FriendlyName": "Solution Az",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.SolAzm",
+    "UnitName": "°",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "141",
+    "Order": 140,
+    "FriendlyName": "Solution Gt",
+    "Visible": false,
+    "Variable": "SolGt",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "142",
+    "Order": 141,
+    "FriendlyName": "Solution Bt",
+    "Visible": false,
+    "Variable": "SolBt",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "143",
+    "Order": 142,
+    "FriendlyName": "Solution Dip",
+    "Visible": false,
+    "Variable": "SolDip",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "144",
+    "Order": 143,
+    "FriendlyName": "IFR2 Declination",
+    "Visible": false,
+    "Variable": "IFR2Dec",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "145",
+    "Order": 144,
+    "FriendlyName": "IFR1 Declination",
+    "Visible": false,
+    "Variable": "IFR1Dec",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "146",
+    "Order": 145,
+    "FriendlyName": "MFM Declination",
+    "Visible": false,
+    "Variable": "MFMDec",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "147",
+    "Order": 146,
+    "FriendlyName": "Solution BtDip",
+    "Visible": false,
+    "Variable": "SolBtDip",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "148",
+    "Order": 147,
+    "FriendlyName": "Gt QC Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.QCLimits.GtLimit",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "149",
+    "Order": 148,
+    "FriendlyName": "Bt QC Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BtLimit",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "150",
+    "Order": 149,
+    "FriendlyName": "Dip QC Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.DipLimit",
+    "UnitName": "",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "151",
+    "Order": 150,
+    "FriendlyName": "BtDip QC Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BtDipLimit",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "152",
+    "Order": 151,
+    "FriendlyName": "Bt QC Static Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.QCLimits.BtLimit",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "153",
+    "Order": 152,
+    "FriendlyName": "Dip QC Static Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.QCLimits.DipLimit",
+    "UnitName": "",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "154",
+    "Order": 153,
+    "FriendlyName": "BtDip QC Static Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.QCLimits.BtDipLimit",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "155",
+    "Order": 154,
+    "FriendlyName": "Az QC Dynamic Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.AzRssDynamicLimit",
+    "UnitName": "°",
+    "FormatType": 1,
+    "IsFrozen": false
+  },
+  {
+    "$id": "156",
+    "Order": 155,
+    "FriendlyName": "Bt QC Dynamic Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BtRssDynamicLimit",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "157",
+    "Order": 156,
+    "FriendlyName": "Dip QC Dynamic Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.DipRssDynamicLimit",
+    "UnitName": "°",
+    "FormatType": 2,
+    "IsFrozen": false
+  },
+  {
+    "$id": "158",
+    "Order": 157,
+    "FriendlyName": "BtDip QC Dynamic Limit",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.BtDipRssDynamicLimit",
+    "UnitName": "nT",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "159",
+    "Order": 158,
+    "FriendlyName": "GTotal",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.GTotal",
+    "UnitName": "g",
+    "FormatType": 5,
+    "IsFrozen": false
+  },
+  {
+    "$id": "160",
+    "Order": 159,
+    "FriendlyName": "Goxy",
+    "Visible": false,
+    "Variable": "CorrectedSurvey.Goxy",
+    "UnitName": "g",
+    "FormatType": 8,
+    "IsFrozen": false
+  },
+  {
+    "$id": "161",
+    "Order": 160,
+    "FriendlyName": "MFM Dipe",
+    "Visible": false,
+    "Variable": "MMDipe",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "162",
+    "Order": 161,
+    "FriendlyName": "MFM Be",
+    "Visible": false,
+    "Variable": "MMBe",
+    "UnitName": "",
+    "FormatType": 3,
+    "IsFrozen": false
+  },
+  {
+    "$id": "163",
+    "Order": 162,
+    "FriendlyName": "MFM Total Dec",
+    "Visible": false,
+    "Variable": "MMTotalDec",
+    "UnitName": "°",
+    "FormatType": 4,
+    "IsFrozen": false
+  },
+  {
+    "$id": "164",
+    "Order": 163,
+    "FriendlyName": "Receive Time",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.ReceiveTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "165",
+    "Order": 164,
+    "FriendlyName": "Processed Time",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.ProcessedTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "166",
+    "Order": 165,
+    "FriendlyName": "Set Definitive Time",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.SetDefinitiveTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "167",
+    "Order": 166,
+    "FriendlyName": "Return Time",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.SurveyReturnTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "168",
+    "Order": 167,
+    "FriendlyName": "Process Time",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.SurveyProcessTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  },
+  {
+    "$id": "169",
+    "Order": 168,
+    "FriendlyName": "Total Time",
+    "Visible": true,
+    "Variable": "CorrectedSurvey.SurveyTotalTime",
+    "UnitName": "",
+    "FormatType": null,
+    "IsFrozen": false
+  }
+]

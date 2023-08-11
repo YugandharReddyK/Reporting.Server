@@ -1,0 +1,15 @@
+{
+  "Name": "English",
+  "Map": [
+    {
+      "Measurement": "Length",
+      "Name": "ft",
+      "HeaderDisplayValue": "ft"
+    },
+    {
+      "Measurement": "Temperature",
+      "Name": "degF",
+      "HeaderDisplayValue": "°F"
+    }
+  ]
+}

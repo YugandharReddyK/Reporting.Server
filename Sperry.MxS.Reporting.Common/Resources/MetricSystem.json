@@ -1,0 +1,15 @@
+{
+  "Name": "Metric",
+  "Map": [
+    {
+      "Measurement": "Length",
+      "Name": "m",
+      "HeaderDisplayValue": "m"
+    },
+    {
+      "Measurement": "Temperature",
+      "Name": "degC",
+      "HeaderDisplayValue": "°C"
+    }
+  ]
+}

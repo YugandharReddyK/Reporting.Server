@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{253B361B-0A17-4792-8540-7333C1643681}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sperry.MxS.Reporting.Common</RootNamespace>
+    <AssemblyName>Sperry.MxS.Reporting.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1">
+      <HintPath>..\Sperry.MxS.Reporting.ReportDoc\3rdParty\Hal.Core.Report\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapster, Version=7.1.5.0, Culture=neutral, PublicKeyToken=2f39883af23c29a8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mapster.7.1.5\lib\net45\Mapster.dll</HintPath>
+    </Reference>
+    <Reference Include="Mapster.Core, Version=1.2.0.0, Culture=neutral, PublicKeyToken=e64997d676a9c1d3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mapster.Core.1.2.0\lib\net45\Mapster.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions, Version=6.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Connections.Abstractions.6.0.4\lib\net461\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Features.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.3.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Mvc.Abstractions.2.1.3\lib\netstandard2.0\Microsoft.AspNetCore.Mvc.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Routing.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Routing.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.AspNetCore.Routing.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder, Version=2.1.10.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Configuration.Binder.2.1.10\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Features, Version=7.0.8.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Features.7.0.8\lib\net462\Microsoft.Extensions.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.2.1.1\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions, Version=6.31.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Abstractions.6.31.0\lib\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=6.22.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.6.22.1\lib\net472\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=6.30.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.6.30.1\lib\net472\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=6.22.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.6.22.1\lib\net472\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.2.1.1\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.0.1\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NCalc, Version=1.3.8.0, Culture=neutral, PublicKeyToken=973cde3f1cafed03, processorArchitecture=MSIL">
+      <HintPath>..\packages\ncalc.1.3.8\lib\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\Sperry.MxS.Reporting.Server\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.6.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.7.0.0\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=6.22.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.6.22.1\lib\net472\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.7.0.0\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\Sperry.MxS.Reporting.Server\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.0.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.1.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Sperry.MxS.Reporting.Server\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\Sperry.MxS.Reporting.Server\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.2.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.1.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.7.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\Sperry.MxS.Reporting.Server\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\Sperry.MxS.Reporting.Server\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\MxSSurveyReportDataProviderConstants.cs" />
+    <Compile Include="Constants\MxSApiEndPointConstants.cs" />
+    <Compile Include="Constants\MxSConstant.cs" />
+    <Compile Include="Constants\MxSConstants.cs" />
+    <Compile Include="Constants\MxSDynamicQCParameterHelperConstants.cs" />
+    <Compile Include="Constants\MxSTemplateConstant.cs" />
+    <Compile Include="Constants\OdisseusToolCodeConstants.cs" />
+    <Compile Include="Constants\Routes\CustomerReport\CustomerReportRouteConstants.cs" />
+    <Compile Include="Constants\Routes\DataProvider\DataProviderRouteConstants.cs" />
+    <Compile Include="Constants\Routes\HealthRouteConstants.cs" />
+    <Compile Include="Constants\Routes\RouteMapConstants.cs" />
+    <Compile Include="Constants\SurveyFormatConstant.cs" />
+    <Compile Include="Constants\TimeConstants.cs" />
+    <Compile Include="Enums\MxSHealthStatusEnum.cs" />
+    <Compile Include="Enums\MxS3MWDActionType.cs" />
+    <Compile Include="Enums\MxSASAModeEnum.cs" />
+    <Compile Include="Enums\MxSASAStatusEnum.cs" />
+    <Compile Include="Enums\MxSAuditType.cs" />
+    <Compile Include="Enums\MxSAziErrorCazandraSolution.cs" />
+    <Compile Include="Enums\MxSAziErrorSurveySource.cs" />
+    <Compile Include="Enums\MxSAzimuthRange.cs" />
+    <Compile Include="Enums\MxSAzimuthTypeEnum.cs" />
+    <Compile Include="Enums\MxSBiasSymmetric.cs" />
+    <Compile Include="Enums\MxSCalculationType.cs" />
+    <Compile Include="Enums\MxSCartesianCordsUnitOptions.cs" />
+    <Compile Include="Enums\MxSCategory.cs" />
+    <Compile Include="Enums\MxSCazandraMagneticValsType.cs" />
+    <Compile Include="Enums\MxSCazandraSolution.cs" />
+    <Compile Include="Enums\MxSChartType.cs" />
+    <Compile Include="Enums\MxSCustomerReportTemplateType.cs" />
+    <Compile Include="Enums\MxSDataProviderActionEnum.cs" />
+    <Compile Include="Enums\MxSDepthStation.cs" />
+    <Compile Include="Enums\MxSDownwardContinuationOptions.cs" />
+    <Compile Include="Enums\MxSDynamicQCModes.cs" />
+    <Compile Include="Enums\MxSErrorModel.cs" />
+    <Compile Include="Enums\MxSFileFormatType.cs" />
+    <Compile Include="Enums\MxSFlag.cs" />
+    <Compile Include="Enums\MxSFormatType.cs" />
+    <Compile Include="Enums\MxSGeodeticScaleFactorEnum.cs" />
+    <Compile Include="Enums\MxSIcarusSolution.cs" />
+    <Compile Include="Enums\MxSIFR1WaypointMode.cs" />
+    <Compile Include="Enums\MxSImportFileType.cs" />
+    <Compile Include="Enums\MxSImportState.cs" />
+    <Compile Include="Enums\MxSInclinationSolutionType.cs" />
+    <Compile Include="Enums\MxSLabelsPosition.cs" />
+    <Compile Include="Enums\MxSLatitudeType.cs" />
+    <Compile Include="Enums\MxSLoggingProvider.cs" />
+    <Compile Include="Enums\MxSLogicalConditionEnum.cs" />
+    <Compile Include="Enums\MxSLogLevel.cs" />
+    <Compile Include="Enums\MxSLongScc.cs" />
+    <Compile Include="Enums\MxSMagneticModelType.cs" />
+    <Compile Include="Enums\MxSMessageType.cs" />
+    <Compile Include="Enums\MxSModelType.cs" />
+    <Compile Include="Enums\MxSMSA.cs" />
+    <Compile Include="Enums\MxSMsaState.cs" />
+    <Compile Include="Enums\MxSNorthReference.cs" />
+    <Compile Include="Enums\MxSObservatoryDataSource.cs" />
+    <Compile Include="Enums\MxSObservatoryDataType.cs" />
+    <Compile Include="Enums\MxSObservatoryType.cs" />
+    <Compile Include="Enums\MxSOperatorsEnum.cs" />
+    <Compile Include="Enums\MxSPMRCalculationType.cs" />
+    <Compile Include="Enums\MxSPrimaryOrSecondary.cs" />
+    <Compile Include="Enums\MxSPumpStatusFilter.cs" />
+    <Compile Include="Enums\MxSQCLevel.cs" />
+    <Compile Include="Enums\MxSQCType.cs" />
+    <Compile Include="Enums\MxSQuadrant.cs" />
+    <Compile Include="Enums\MxSReportResultMessage.cs" />
+    <Compile Include="Enums\MxSResourceStatus.cs" />
+    <Compile Include="Enums\MxSRigMagValueType.cs" />
+    <Compile Include="Enums\MxSRigType.cs" />
+    <Compile Include="Enums\MxSROCOptions.cs" />
+    <Compile Include="Enums\MxSRuleResultEnum.cs" />
+    <Compile Include="Enums\MxSRunOption.cs" />
+    <Compile Include="Enums\MxSSagCorrectionLevel.cs" />
+    <Compile Include="Enums\MxSSaveCallerEnum.cs" />
+    <Compile Include="Enums\MxSScaleAndOffsetType.cs" />
+    <Compile Include="Enums\MxSSecurityPermission.cs" />
+    <Compile Include="Enums\MxSSeriesType.cs" />
+    <Compile Include="Enums\MxSShortCollarCorrectionQuadrant.cs" />
+    <Compile Include="Enums\MxSSolutionService.cs" />
+    <Compile Include="Enums\MxSSolutionType.cs" />
+    <Compile Include="Enums\MxSState.cs" />
+    <Compile Include="Enums\MxSSurveyProcessCaller.cs" />
+    <Compile Include="Enums\MxSSurveyPumpStatus.cs" />
+    <Compile Include="Enums\MxSSurveyStatus.cs" />
+    <Compile Include="Enums\MxSSurveySubmissionErrorCodes.cs" />
+    <Compile Include="Enums\MxSSurveyType.cs" />
+    <Compile Include="Enums\MxSSurveyTypes.cs" />
+    <Compile Include="Enums\MxSTemplateType.cs" />
+    <Compile Include="Enums\MxSTimeZoneTypes.cs" />
+    <Compile Include="Enums\MxSToolface.cs" />
+    <Compile Include="Enums\MxSToolType.cs" />
+    <Compile Include="Enums\MxSToolTypeOptions.cs" />
+    <Compile Include="Enums\MxSTriacSelectionMode.cs" />
+    <Compile Include="Enums\MxSUnitSystemEnum.cs" />
+    <Compile Include="Enums\MxSUpdateActionType.cs" />
+    <Compile Include="Enums\MxSUpdateType.cs" />
+    <Compile Include="Enums\MxSUserType.cs" />
+    <Compile Include="Enums\MxSWaypointMode.cs" />
+    <Compile Include="Enums\MxSWaypointType.cs" />
+    <Compile Include="Enums\MxSWellStatus.cs" />
+    <Compile Include="Enums\MxSWellType.cs" />
+    <Compile Include="Enums\MxSWorkbenchCalculationType.cs" />
+    <Compile Include="Enums\MxSWorkBenchSpecialDataStatus.cs" />
+    <Compile Include="Extensions\ClaimsExtension.cs" />
+    <Compile Include="Extensions\Configurations.cs" />
+    <Compile Include="Extensions\CorrectedSurveyExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Extensions\EnumExtensions.cs" />
+    <Compile Include="Extensions\ExpressionExtensions.cs" />
+    <Compile Include="Extensions\ListExtension.cs" />
+    <Compile Include="Extensions\ObjectExtension.cs" />
+    <Compile Include="Extensions\PumpStatusFilterExtensions.cs" />
+    <Compile Include="Extensions\ResultObjectExtenstions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TimeZoneInfoExtension.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Helpers\ASA\ASASurveyTypeAction.cs" />
+    <Compile Include="Helpers\ASA\ExpressionValidator.cs" />
+    <Compile Include="Helpers\AziErrorCalculationHelper.cs" />
+    <Compile Include="Helpers\BasePropertyHelper.cs" />
+    <Compile Include="Helpers\ConfigurationManagerHelper.cs" />
+    <Compile Include="Helpers\DataModelHelper.cs" />
+    <Compile Include="Helpers\DynamicQCParameterHelper.cs" />
+    <Compile Include="Helpers\EmbeddedResourceHelper.cs" />
+    <Compile Include="Helpers\ExpressionValidator.cs" />
+    <Compile Include="Helpers\ExtendHelper.cs" />
+    <Compile Include="Helpers\FormatHelper.cs" />
+    <Compile Include="Helpers\FormatNumberHelper.cs" />
+    <Compile Include="Helpers\GZipCompression.cs" />
+    <Compile Include="Helpers\IgnoreChangeAttribute.cs" />
+    <Compile Include="Helpers\IgnoreImportPropertyAttribute.cs" />
+    <Compile Include="Helpers\ListHelper.cs" />
+    <Compile Include="Helpers\MethodNameHelper.cs" />
+    <Compile Include="Helpers\NamedLockHelper.cs" />
+    <Compile Include="Helpers\ParametersHelper.cs" />
+    <Compile Include="Helpers\ReflectionHelper.cs" />
+    <Compile Include="Helpers\RequestInfoHelper.cs" />
+    <Compile Include="Helpers\RoundHelper.cs" />
+    <Compile Include="Helpers\SandboxCalculationResultHelper.cs" />
+    <Compile Include="Helpers\SurveyComparer.cs" />
+    <Compile Include="Helpers\SurveyProcessingEssentials.cs" />
+    <Compile Include="Helpers\TimeHelper.cs" />
+    <Compile Include="Helpers\TimeOffsetHelper.cs" />
+    <Compile Include="Helpers\ToolCodeFileParser.cs" />
+    <Compile Include="Helpers\TypeConverter.cs" />
+    <Compile Include="Helpers\WellPropertyFinder.cs" />
+    <Compile Include="ImportSurveys\CellColor.cs" />
+    <Compile Include="ImportSurveys\ImportSurveyResult.cs" />
+    <Compile Include="ImportSurveys\ResultSurveyValue.cs" />
+    <Compile Include="ImportSurveys\SurveyGrid.cs" />
+    <Compile Include="ImportSurveys\SurveyRow.cs" />
+    <Compile Include="Interfaces\IMxSBgsHyperCubeService.cs" />
+    <Compile Include="Interfaces\IMxSClientRealtimeservice.cs" />
+    <Compile Include="Interfaces\IMxSConnectionUtility.cs" />
+    <Compile Include="Interfaces\IMxSRealtimeService.cs" />
+    <Compile Include="Interfaces\IMxSReportingService.cs" />
+    <Compile Include="Interfaces\IMxSCustomerReportDataProvider.cs" />
+    <Compile Include="Interfaces\IMxSCustomerReportImageProvider.cs" />
+    <Compile Include="Interfaces\IMxSCustomerReportImageRepository.cs" />
+    <Compile Include="Interfaces\IMxSCustomerReportService.cs" />
+    <Compile Include="Interfaces\IMxSDataAvailable.cs" />
+    <Compile Include="Interfaces\IMxSDateTime.cs" />
+    <Compile Include="Interfaces\IMxSDateTimeDepth.cs" />
+    <Compile Include="Interfaces\IMxSDepth.cs" />
+    <Compile Include="Interfaces\IMxSEngineAction.cs" />
+    <Compile Include="Interfaces\IMxSHealthService.cs" />
+    <Compile Include="Interfaces\IMxSInsiteSurvey.cs" />
+    <Compile Include="Interfaces\IMxSLogMessage.cs" />
+    <Compile Include="Interfaces\IMxSMapInformation.cs" />
+    <Compile Include="Interfaces\IMxSProcessingOptions.cs" />
+    <Compile Include="Interfaces\IMxSSurveyRow.cs" />
+    <Compile Include="Interfaces\IMxSSurveyValue.cs" />
+    <Compile Include="Interfaces\IMxSTimeOffSet .cs" />
+    <Compile Include="Interfaces\IMxSUnitSystem.cs" />
+    <Compile Include="Interfaces\IMxSWellService.cs" />
+    <Compile Include="Interfaces\IMxSWorkBenchAzimuthProperties.cs" />
+    <Compile Include="Interfaces\IMxSReportTemplateRepository.cs" />
+    <Compile Include="Interfaces\IServiceManager\IMxSCommunicatorBase.cs" />
+    <Compile Include="Interfaces\IServiceManager\IMxSDataProviderCommunicator.cs" />
+    <Compile Include="Interfaces\ISurveyProcessorService.cs" />
+    <Compile Include="Interfaces\ITemplatePreviewVerification.cs" />
+    <Compile Include="Interfaces\Templates\IMxSExportImportTemplateServerListManager.cs" />
+    <Compile Include="MathematicalFunctions\CommonCalculation.cs" />
+    <Compile Include="MathematicalFunctions\Conversions.cs" />
+    <Compile Include="MathematicalFunctions\PositionValues.cs" />
+    <Compile Include="ModelsExtensions\ASAExtensions\MaxSurveyPreConditionRuleExtension.cs" />
+    <Compile Include="ModelsExtensions\ASAExtensions\MaxSurveyRuleExtension.cs" />
+    <Compile Include="ModelsExtensions\ASAExtensions\MaxSurveyRuleSetResponseExtension.cs" />
+    <Compile Include="ModelsExtensions\BGSDataPointExtension.cs" />
+    <Compile Include="ModelsExtensions\ColumnItemextension.cs" />
+    <Compile Include="ModelsExtensions\ColumnOptionsExtension.cs" />
+    <Compile Include="ModelsExtensions\ComplexExtension.cs" />
+    <Compile Include="ModelsExtensions\CustomerReportExtensions\CustomerImagesExtension.cs" />
+    <Compile Include="ModelsExtensions\CustomerReportExtensions\CustomerReportDataExtension.cs" />
+    <Compile Include="ModelsExtensions\ObservatoryStationExtensions\ObservatoryReadingExtension.cs" />
+    <Compile Include="ModelsExtensions\ObservatoryStationExtensions\ObservatoryStationExtension.cs" />
+    <Compile Include="ModelsExtensions\OdissuesExtensions\OdisseusToolCodeParamsExtension.cs" />
+    <Compile Include="ModelsExtensions\OdissuesExtensions\OdisseusToolCodeSectionExtension.cs" />
+    <Compile Include="ModelsExtensions\RulesEngineExtensions\ActionResultExtension.cs" />
+    <Compile Include="ModelsExtensions\RulesEngineExtensions\MaxSurveyPreconditionRuleExtension.cs" />
+    <Compile Include="ModelsExtensions\RulesEngineExtensions\MaxSurveyRuleExtension.cs" />
+    <Compile Include="ModelsExtensions\RulesEngineExtensions\RuleResponseExtension.cs" />
+    <Compile Include="ModelsExtensions\RulesEngineExtensions\RuleSetResponseExtension.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\CorrectedInsiteSurveyExtensions.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\CorrectedSurveyExtensions.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\CorrectedSurveyValuesExtension.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\DerivedSurveyValuesExtensions.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\PlanSurveyExtensions.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\RawSurveyExtensions.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\ShortSurveyExtension.cs" />
+    <Compile Include="ModelsExtensions\SurveysExtensions\UncertainitiesExtension.cs" />
+    <Compile Include="ModelsExtensions\TemplateExtensions\ExportTemplateConfigurationExtension.cs" />
+    <Compile Include="ModelsExtensions\TemplateExtensions\ImportTemplateConfigurationExtension.cs" />
+    <Compile Include="ModelsExtensions\WellExtensions\RunExtensions.cs" />
+    <Compile Include="ModelsExtensions\WellExtensions\SolutionExtensions.cs" />
+    <Compile Include="ModelsExtensions\WellExtensions\ThirdPartyWellExtensions.cs" />
+    <Compile Include="ModelsExtensions\WellExtensions\WayPointExtensions.cs" />
+    <Compile Include="ModelsExtensions\WellExtensions\WellExtensions.cs" />
+    <Compile Include="Models\Admin\CpuHealthStat.cs" />
+    <Compile Include="Models\Admin\DiskHealthStat.cs" />
+    <Compile Include="Models\Admin\MonitorConfig.cs" />
+    <Compile Include="Models\Admin\ResultStatus.cs" />
+    <Compile Include="Models\ASA\ASAGlobalPreConditionRule.cs" />
+    <Compile Include="Models\ASA\ASAGlobalRule.cs" />
+    <Compile Include="Models\ASA\ASAGlobalRuleBase.cs" />
+    <Compile Include="Models\ASA\ASAReset.cs" />
+    <Compile Include="Models\ASA\MaxSurveyActionResult.cs" />
+    <Compile Include="Models\ASA\MaxSurveyPreConditionRule.cs" />
+    <Compile Include="Models\ASA\MaxSurveyRule.cs" />
+    <Compile Include="Models\ASA\MaxSurveyRuleResponse.cs" />
+    <Compile Include="Models\ASA\MaxSurveyRuleSetResponse.cs" />
+    <Compile Include="Models\ASA\RuleBase.cs" />
+    <Compile Include="Models\AudioWellPayload.cs" />
+    <Compile Include="Models\AutoCompleteEntry.cs" />
+    <Compile Include="Models\BGSDataPoint.cs" />
+    <Compile Include="Models\BgsHyperCubeRequestHeader.cs" />
+    <Compile Include="Models\BGSWaypoint.cs" />
+    <Compile Include="Models\BGSWaypointsSummary.cs" />
+    <Compile Include="Models\BgsWebsiteInfo.cs" />
+    <Compile Include="Models\BillingReport.cs" />
+    <Compile Include="Models\Chart\DashLineBuilder.cs" />
+    <Compile Include="Models\Chart\LineStyles.cs" />
+    <Compile Include="Models\Chart\SeriesProperties.cs" />
+    <Compile Include="Models\ColumnItem.cs" />
+    <Compile Include="Models\ColumnOptions.cs" />
+    <Compile Include="Models\Comms\MxSDataProviderCommunicationInfo.cs" />
+    <Compile Include="Models\Comms\MxSServiceCommunicationInfoBase.cs" />
+    <Compile Include="Models\Communication\MxSServiceCommunicationInfo.cs" />
+    <Compile Include="Models\Complex.cs" />
+    <Compile Include="Models\Configuration\ApiServerSettings.cs" />
+    <Compile Include="Models\CoordSys\AdvancedCoordInput.cs" />
+    <Compile Include="Models\CoordSys\BasicCoordInput.cs" />
+    <Compile Include="Models\CoordSys\Coordinate2D.cs" />
+    <Compile Include="Models\CoordSys\CoordResults.cs" />
+    <Compile Include="Models\CoordSys\CoordSysDBServer.cs" />
+    <Compile Include="Models\CoordSys\CoordSysService.cs" />
+    <Compile Include="Models\CoordSys\MagCoordResults.cs" />
+    <Compile Include="Models\CoordSys\MagneticModel.cs" />
+    <Compile Include="Models\CustomerReport\CustomerImages.cs" />
+    <Compile Include="Models\CustomerReport\CustomerReport.cs" />
+    <Compile Include="Models\CustomerReport\CustomerReportData.cs" />
+    <Compile Include="Models\CustomerReport\CustomerReportTemplate.cs" />
+    <Compile Include="Models\CustomerReport\CustomerReportTemplateData.cs" />
+    <Compile Include="Models\DataModelBase.cs" />
+    <Compile Include="Models\DPA\DPABaseData.cs" />
+    <Compile Include="Models\DPA\DPAParameters.cs" />
+    <Compile Include="Models\DPA\DPAPickResult.cs" />
+    <Compile Include="Models\DPA\DPAPoleModel.cs" />
+    <Compile Include="Models\DPA\DPAResults.cs" />
+    <Compile Include="Models\DTOModel\AssociationFor3MWDUser.cs" />
+    <Compile Include="Models\DTOModel\WellUpdateResponse.cs" />
+    <Compile Include="Models\DynamicQC\DynamicQCInputParameters.cs" />
+    <Compile Include="Models\DynamicQC\DynamicQCOutput.cs" />
+    <Compile Include="Models\DynamicQC\DynamicQCSurveyInput.cs" />
+    <Compile Include="Models\Fieldpoint.cs" />
+    <Compile Include="Models\HealthState.cs" />
+    <Compile Include="Models\HypercubeWebsiteInfo.cs" />
+    <Compile Include="Models\LinkInsiteWellRequest.cs" />
+    <Compile Include="Models\LinkInsiteWellResponse.cs" />
+    <Compile Include="Models\MaxSurveySetting.cs" />
+    <Compile Include="Models\MFM\MFMInputParameter.cs" />
+    <Compile Include="Models\MxSServerInfo.cs" />
+    <Compile Include="Models\NetworkInfo.cs" />
+    <Compile Include="Models\ObservatoryUpdateInformation.cs" />
+    <Compile Include="Models\Observatry\ObservatoryReading.cs" />
+    <Compile Include="Models\Observatry\ObservatoryStation.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCode.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCodeData.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCodeParams.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCodes.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCodeSection.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCodesToolCode.cs" />
+    <Compile Include="Models\Odissues\OdisseusToolCodesToolCodeTerm.cs" />
+    <Compile Include="Models\Odissues\Uncert.cs" />
+    <Compile Include="Models\Odissues\UncertCalc.cs" />
+    <Compile Include="Models\Odissues\UncertProcessor.cs" />
+    <Compile Include="Models\Okta\OktaGroupConfig.cs" />
+    <Compile Include="Models\Okta\OktaUser.cs" />
+    <Compile Include="Models\Okta\OktaUserProfile.cs" />
+    <Compile Include="Models\PMRInput.cs" />
+    <Compile Include="Models\ProcessingOptions.cs" />
+    <Compile Include="Models\ProxyInfo.cs" />
+    <Compile Include="Models\Raw\InclinationValues.cs" />
+    <Compile Include="Models\Raw\MagneticsValues.cs" />
+    <Compile Include="Models\ReportItem.cs" />
+    <Compile Include="Models\Report\CustomerReportChartInfo.cs" />
+    <Compile Include="Models\Report\ReportParameters.cs" />
+    <Compile Include="Models\Report\SubReportPayload.cs" />
+    <Compile Include="Models\RulesEngine\ActionResult.cs" />
+    <Compile Include="Models\RulesEngine\Rule.cs" />
+    <Compile Include="Models\RulesEngine\RuleResponse.cs" />
+    <Compile Include="Models\RulesEngine\RuleSet.cs" />
+    <Compile Include="Models\RulesEngine\RuleSetResponse.cs" />
+    <Compile Include="Models\SandboxCalculationResult.cs" />
+    <Compile Include="Models\Security\AdminUser.cs" />
+    <Compile Include="Models\Security\AppUser.cs" />
+    <Compile Include="Models\Security\AuditLog.cs" />
+    <Compile Include="Models\Security\MxSUser.cs" />
+    <Compile Include="Models\Security\ResourceGroup.cs" />
+    <Compile Include="Models\ServerMetaData.cs" />
+    <Compile Include="Models\Surveys\CorrectedInsiteSurvey.cs" />
+    <Compile Include="Models\Surveys\CorrectedSurvey.cs" />
+    <Compile Include="Models\Surveys\CorrectedSurveyValues.cs" />
+    <Compile Include="Models\Surveys\DerivedSurveyValues.cs" />
+    <Compile Include="Models\Surveys\PlanSurvey.cs" />
+    <Compile Include="Models\Surveys\RawSurvey.cs" />
+    <Compile Include="Models\Surveys\ShortSurvey.cs" />
+    <Compile Include="Models\Surveys\Survey.cs" />
+    <Compile Include="Models\Surveys\SurveyQCLimits.cs" />
+    <Compile Include="Models\Surveys\WaitObservatoryCorrectedSurvey.cs" />
+    <Compile Include="Models\Template\CellValueChangedValidation.cs" />
+    <Compile Include="Models\Template\DuplicateCellValueValidation.cs" />
+    <Compile Include="Models\Template\ExcelAllowedOptions.cs" />
+    <Compile Include="Models\Template\ExcelImportTemplateValidationBase.cs" />
+    <Compile Include="Models\Template\ExportImportTemplateInformation.cs" />
+    <Compile Include="Models\Template\ExportTemplateConfiguration.cs" />
+    <Compile Include="Models\Template\ImportAllowedOptions.cs" />
+    <Compile Include="Models\Template\ImportTemplateColumnMapping.cs" />
+    <Compile Include="Models\Template\ImportTemplateConfiguration.cs" />
+    <Compile Include="Models\Template\MxSMapInformation.cs" />
+    <Compile Include="Models\Template\OptionListCellValueValidation.cs" />
+    <Compile Include="Models\Template\PreviewCellModel.cs" />
+    <Compile Include="Models\Template\PreviewTemplateValidationModel.cs" />
+    <Compile Include="Models\Template\RangeCellValueValidation.cs" />
+    <Compile Include="Models\Template\TemplateConfiguration.cs" />
+    <Compile Include="Models\Template\TemplateConfigurationBase.cs" />
+    <Compile Include="Models\Template\TemplateConfigurationResponse.cs" />
+    <Compile Include="Models\Template\TemplateDisplayInformation.cs" />
+    <Compile Include="Models\Template\TemplateInfo.cs" />
+    <Compile Include="Models\Template\TemplateKeyValuePair.cs" />
+    <Compile Include="Models\Template\TemplateWellInformation.cs" />
+    <Compile Include="Models\Template\TypeCheckCellValueValidation.cs" />
+    <Compile Include="Models\Template\WellTemplateSelectionModel.cs" />
+    <Compile Include="Models\TraceLog.cs" />
+    <Compile Include="Models\UpdatePayload.cs" />
+    <Compile Include="Models\Utilities\Format.cs" />
+    <Compile Include="Models\Utilities\FormatType.cs" />
+    <Compile Include="Models\WellInfo.cs" />
+    <Compile Include="Models\Well\BroadcastWellPayload.cs" />
+    <Compile Include="Models\Well\Run.cs" />
+    <Compile Include="Models\Well\Solution.cs" />
+    <Compile Include="Models\Well\SolutionRawsurveyManager.cs" />
+    <Compile Include="Models\Well\ThirdPartyWell.cs" />
+    <Compile Include="Models\Well\Uncertainty.cs" />
+    <Compile Include="Models\Well\Waypoint.cs" />
+    <Compile Include="Models\Well\Well.cs" />
+    <Compile Include="Models\Well\WellHeaders.cs" />
+    <Compile Include="Models\Well\WellResponse.cs" />
+    <Compile Include="Models\Well\WellUpdatePayload1.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorInput.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorLCData.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorLCPositionData.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorOutput.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorOutputBase.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorParameters.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorPositionData.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorSCData.cs" />
+    <Compile Include="Models\Workbench\AziError\AziErrorSCPositionData.cs" />
+    <Compile Include="Models\Workbench\AziError\Base\AziErrorBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\Base\CazandraAveBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\Base\CazandraAvexBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\Base\CazandraDataBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\Base\CazandraStdBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\Base\CazandraStdxBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\Base\CazandraTfcTxySfeDataBase.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraCentreData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraDiyAveData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraDiyData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraDiyStdData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraInputData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraRawAveData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraRawData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraRawStdData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraSfeAveData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraSfeAvexData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraSfeData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraSfeStdData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraSfeStdxData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTfcAveData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTfcAvexData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTfcData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTfcStdData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTfcStdxData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTxyAveData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTxyAvexData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTxyData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTxyStdData.cs" />
+    <Compile Include="Models\Workbench\Cazandra\CazandraTxyStdxData.cs" />
+    <Compile Include="Models\Workbench\Icarus\Base\IcarusDataBase.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusCentreData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusDiyAveData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusDiyData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusDiyStdData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusRawAveData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusRawData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusRawStdData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusSfeAveData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusSfeAvexData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusSfeData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusSfeStdData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusSfeStdxData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTfcAveData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTfcAvexData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTfcData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTfcStdData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTfcStdxData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTxyAveData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTxyAvexData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTxyData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTxyStdData.cs" />
+    <Compile Include="Models\Workbench\Icarus\IcarusTxyStdxData.cs" />
+    <Compile Include="Models\Workbench\WorkBenchCalculationResult.cs" />
+    <Compile Include="Models\Workbench\WorkBenchDataModel.cs" />
+    <Compile Include="Models\XmlDataDefinition\Report.cs" />
+    <Compile Include="Models\XmlDataDefinition\ReportFromApp.cs" />
+    <Compile Include="Models\XmlDataDefinition\ReportMetaData.cs" />
+    <Compile Include="Models\XmlDataDefinition\ReportPlot.cs" />
+    <Compile Include="MxSRealtimeservice.cs" />
+    <Compile Include="Requests\ExternalWebRequest.cs" />
+    <Compile Include="Requests\JobRequest.cs" />
+    <Compile Include="Requests\WellSearchRequest.cs" />
+    <Compile Include="Results\CustomerReportResult.cs" />
+    <Compile Include="Results\ResultObject.cs" />
+    <Compile Include="Services\CommunicatorServiceBase.cs" />
+    <Compile Include="Services\MxSDataProviderCommunicatorService.cs" />
+    <Compile Include="Units\MxSDefaultUnitSystem.cs" />
+    <Compile Include="Units\MxSDetailUnitInformation.cs" />
+    <Compile Include="Units\MxSMeasurement.cs" />
+    <Compile Include="Units\MxSMeasurements.cs" />
+    <Compile Include="Units\MxSUnitSystemMap.cs" />
+    <Compile Include="Units\MxSUnitVariableMap.cs" />
+    <Compile Include="Units\MxSUnitVariableRelations.cs" />
+    <Compile Include="Units\UnitSystem.cs" />
+    <Compile Include="Utilities\AppSettingsHelper.cs" />
+    <Compile Include="Utilities\Format.cs" />
+    <Compile Include="Utilities\FormatTypeProperties.cs" />
+    <Compile Include="Utilities\HTTPUtilities.cs" />
+    <Compile Include="Utilities\MxSConnectionUtility.cs" />
+    <Compile Include="Utilities\RequestToObjectConverter.cs" />
+    <Compile Include="Utilities\TypeSerializationBinder.cs" />
+    <Compile Include="Utilities\UnitConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Resources\CorrectedSurveyColumnOptions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EnglishSystem.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ExcelImportAllowedValues.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ExcelImportValidation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Measurements.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MetricSystem.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UnitVariableRealtion.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3rdParty\Hal.Core.Report\InfragisticsWPF4.Controls.Charts.XamDataChart.v12.1.dll" />
+    <Content Include="3rdParty\Hal.Core.Report\InfragisticsWPF4.DataVisualization.v12.1.dll" />
+    <Content Include="3rdParty\Hal.Core.Report\InfragisticsWPF4.Editors.v12.1.dll" />
+    <Content Include="3rdParty\Hal.Core.Report\InfragisticsWPF4.Ribbon.v12.1.dll" />
+    <Content Include="3rdParty\Hal.Core.Report\InfragisticsWPF4.v12.1.dll" />
+    <Content Include="3rdParty\Hal.Core.Report\WPFToolkit.Extended.dll" />
+    <Content Include="3rdParty\Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll" />
+    <Content Include="3rdParty\System.Data.SQLite64.dll" />
+    <EmbeddedResource Include="Resources\System.Data.SQLite32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DynamicQCParameters.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FormatType.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UnitSets.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="3rdParty\System.Data.SQLite32.dll" />
+    <EmbeddedResource Include="Resources\System.Data.SQLite64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

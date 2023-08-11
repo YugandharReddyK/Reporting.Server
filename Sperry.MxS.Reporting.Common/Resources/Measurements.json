@@ -1,0 +1,574 @@
+{
+  "Measurements": [
+    {
+      "Name": "Length",
+      "Unit": [
+        {
+          "Name": "ft",
+          "Measurement": "feet",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": "ft"
+        },
+        {
+          "Name": "m",
+          "Measurement": "meter",
+          "Factor": "0.3048",
+          "Offset": "0",
+          "HeaderDisplayValue": "ft"
+        },
+        {
+          "Name": "usft",
+          "Measurement": "us feet",
+          "Factor": "0.999998000004 ",
+          "Offset": "0",
+          "HeaderDisplayValue": "ft"
+        }
+      ]
+    },
+    {
+      "Name": "Magnetic Field",
+      "Unit": [
+        {
+          "Name": "nT",
+          "Measurement": "nanoTesla",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": "nt"
+        },
+        {
+          "Name": "uT",
+          "Measurement": "microTesla",
+          "Factor": "0.001",
+          "Offset": "0",
+          "HeaderDisplayValue": "ut"
+        },
+        {
+          "Name": "Gauss",
+          "Measurement": "Gauss",
+          "Factor": "1E-05",
+          "Offset": "0",
+          "HeaderDisplayValue": "Gauss"
+        }
+      ]
+    },
+    {
+      "Name": "Angle",
+      "Unit": [
+        {
+          "Name": "degree",
+          "Measurement": "degrees",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": "°"
+        }
+      ]
+    },
+    {
+      "Name": "Temperature",
+      "Unit": [
+        {
+          "Name": "degF",
+          "Measurement": "fahrenheit",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": "°F"
+        },
+        {
+          "Name": "degC",
+          "Measurement": "celsius",
+          "Factor": "0.5555555",
+          "Offset": "-17.77777",
+          "HeaderDisplayValue": "°C"
+        }
+      ]
+    },
+    {
+      "Name": "Gravity Field",
+      "Unit": [
+        {
+          "Name": "g",
+          "Measurement": "g",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": "g"
+        },
+        {
+          "Name": "mg",
+          "Measurement": "milli g",
+          "Factor": "1000",
+          "Offset": "0",
+          "HeaderDisplayValue": "mg"
+        },
+        {
+          "Name": "m/s2",
+          "Measurement": "metre per sec2",
+          "Factor": "9.80665",
+          "Offset": "0",
+          "HeaderDisplayValue": "m/s2"
+        }
+      ]
+    },
+    {
+      "Name": "Unitless",
+      "Unit": [
+        {
+          "Name": "unitless",
+          "Measurement": "unitless",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": "unitless"
+        }
+      ]
+    },
+    {
+      "Name": "DateTime",
+      "Unit": [
+        {
+          "Name": "dd-MMM-yyyy HH:mm:ss",
+          "Measurement": "dd-MMM-yyyy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MM-yyyy HH:mm:ss",
+          "Measurement": "dd-MM-yyyy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MMM-yy HH:mm:ss",
+          "Measurement": "dd-MMM-yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MM-yy HH:mm:ss",
+          "Measurement": "dd-MM-yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MMM-yyyy",
+          "Measurement": "dd-MMM-yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MM-yyyy",
+          "Measurement": "dd-MM-yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MMM-yy",
+          "Measurement": "dd-MMM-yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MM-yy",
+          "Measurement": "dd-MM-yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM-dd-yyyy HH:mm:ss",
+          "Measurement": "MM-dd-yyyy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM-dd-yy HH:mm:ss",
+          "Measurement": "MM-dd-yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM-dd-yyyy HH:mm",
+          "Measurement": "MM-dd-yyyy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM-dd-yyyy hh:mm",
+          "Measurement": "MM-dd-yyyy hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM-dd-yy hh:mm",
+          "Measurement": "MM-dd-yy hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yyyy-MM-dd HH:mm:ss",
+          "Measurement": "yyyy-MM-dd HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yy-MM-dd HH:mm:ss",
+          "Measurement": "yy-MM-dd HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yyyy-MM-dd HH:mm",
+          "Measurement": "yyyy-MM-dd HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yy-MM-dd HH:mm",
+          "Measurement": "yy-MM-dd HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MMM/yyyy HH:mm:ss",
+          "Measurement": "dd/MMM/yyyy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yyyy HH:mm:ss",
+          "Measurement": "dd/MMM/yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MMM/yy HH:mm:ss",
+          "Measurement": "dd/MMM/yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yy HH:mm:ss",
+          "Measurement": "dd/MM/yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "d/MMM/yy HH:mm:ss",
+          "Measurement": "d/MMM/yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MMM/yyyy HH:mm",
+          "Measurement": "dd/MMM/yyyy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yyyy HH:mm",
+          "Measurement": "dd/MM/yyyy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MMM/yy HH:mm",
+          "Measurement": "dd/MMM/yy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yy HH:mm",
+          "Measurement": "dd/MM/yy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "d/M/yy hh:mm",
+          "Measurement": "d/M/yy hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "d/M/yy h:mm",
+          "Measurement": "d/M/yy h:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MMM/yyyy",
+          "Measurement": "dd/MMM/yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yyyy",
+          "Measurement": "dd/MM/yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yy HH:mm:ss",
+          "Measurement": "MM/dd/yy HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yyyy HH:mm",
+          "Measurement": "MM/dd/yyyy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yy HH:mm",
+          "Measurement": "MM/dd/yy HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yyyy hh:mm",
+          "Measurement": "MM/dd/yyyy hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yy hh:mm",
+          "Measurement": "MM/dd/yy hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "M/d/yy hh:mm",
+          "Measurement": "M/d/yy hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "M/d/yy h:mm",
+          "Measurement": "M/d/yy h:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yy/MM/dd HH:mm",
+          "Measurement": "yy/MM/dd HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Name": "Date",
+      "Unit": [
+        {
+          "Name": "MM-dd-yyyy",
+          "Measurement": "MM-dd-yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM-dd-yy",
+          "Measurement": "MM-dd-yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "M-d-yyyy",
+          "Measurement": "M-d-yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "M-d-yy",
+          "Measurement": "M-d-yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yyyy-MM-dd",
+          "Measurement": "yyyy-MM-dd",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "yy-MM-dd",
+          "Measurement": "yy-MM-dd",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MM-yy",
+          "Measurement": "dd-MM-yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MMM-yy",
+          "Measurement": "dd-MMM-yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd-MM-yyyy",
+          "Measurement": "dd-MM-yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yyyy",
+          "Measurement": "MM/dd/yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "M/d/yyyy",
+          "Measurement": "M/d/yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "MM/dd/yy",
+          "Measurement": "MM/dd/yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "M/d/yy",
+          "Measurement": "M/d/yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yy",
+          "Measurement": "dd/MM/yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MMM/yy",
+          "Measurement": "dd/MMM/yy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "dd/MM/yyyy",
+          "Measurement": "dd/MM/yyyy",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        }
+      ]
+    },
+    {
+      "Name": "Time",
+      "Unit": [
+        {
+          "Name": "HH:mm:ss",
+          "Measurement": "HH:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "H:mm:ss",
+          "Measurement": "H:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "HH:mm",
+          "Measurement": "HH:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "H:mm",
+          "Measurement": "H:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "hh:mm:ss",
+          "Measurement": "hh:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "h:mm:ss",
+          "Measurement": "h:mm:ss",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "hh:mm",
+          "Measurement": "hh:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        },
+        {
+          "Name": "h:mm",
+          "Measurement": "h:mm",
+          "Factor": "1",
+          "Offset": "0",
+          "HeaderDisplayValue": ""
+        }
+      ]
+    }
+  ]
+}

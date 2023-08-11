@@ -1,0 +1,62 @@
+{
+  "ExcelAllowedOptions": [
+    {
+      "HeaderName": "Enabled",
+      "OptionType": "TRUE",
+      "ListOptions": [
+        "Yes",
+        "TRUE",
+        "1"
+      ]
+    },
+    {
+      "HeaderName": "Enabled",
+      "OptionType": "FALSE",
+      "ListOptions": [
+        "No",
+        "FALSE",
+        "0"
+      ]
+    },
+    {
+      "HeaderName": "Pump Status",
+      "OptionType": "On",
+      "ListOptions": [
+        "On",
+        "Yes",
+        "up",
+        "1"
+      ]
+    },
+    {
+      "HeaderName": "Pump Status",
+      "OptionType": "Off",
+      "ListOptions": [
+        "Off",
+        "No",
+        "Down",
+        "0"
+      ]
+    },
+    {
+      "HeaderName": "Azimuth Type",
+      "OptionType": "LongCollar",
+      "ListOptions": [
+        "LongCollar",
+        "Long Collar",
+        "LC",
+        "0"
+      ]
+    },
+    {
+      "HeaderName": "Azimuth Type",
+      "OptionType": "ShortCollar",
+      "ListOptions": [
+        "ShortCollar",
+        "Short Collar",
+        "SC",
+        "1"
+      ]
+    }
+  ]
+}

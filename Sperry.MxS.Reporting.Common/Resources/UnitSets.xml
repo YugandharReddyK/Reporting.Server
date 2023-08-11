@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<UnitSets>
+  <UnitSet type="1">
+    <Unit name="ft" unitSystem="English" />
+    <Unit name="m" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="2">
+    <Unit name="ft" unitSystem="English" />
+    <Unit name="m" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="3">
+    <Unit name="nT" />
+  </UnitSet>
+  <UnitSet type="4">
+    <Unit name="°" />
+  </UnitSet>
+  <UnitSet type="5">
+    <Unit name="g" />
+  </UnitSet>
+  <UnitSet type="6">
+    <Unit name="g" />
+  </UnitSet>
+  <UnitSet type="7">
+    <Unit name="°F" unitSystem="English" />
+    <Unit name="°C" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="8">
+    <Unit name="°" />
+  </UnitSet>
+  <UnitSet type="9">
+    <Unit name="nT/ft^2" unitSystem="English" />
+    <Unit name="nT/m^2" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="10">
+    <Unit name="1/ft" unitSystem="English" />
+    <Unit name="1/m" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="11">
+    <Unit name="ft^2" unitSystem="English" />
+    <Unit name="m^2" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="12">
+    <Unit name="inches" unitSystem="English" />
+    <Unit name="cm" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="13">
+    <Unit name="lb/ft^3" unitSystem="English" />
+    <Unit name="kg/m^3" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="14">
+    <Unit name="milliG" />
+  </UnitSet>
+  <UnitSet type="15">
+    <Unit name="mg" />
+  </UnitSet>
+  <UnitSet type="16">
+    <Unit name="%" />
+  </UnitSet>
+  <UnitSet type="17">
+    <Unit name="%" />
+  </UnitSet>
+  <UnitSet type="18">
+    <Unit name="nT" />
+  </UnitSet>
+  <UnitSet type="19">
+    <Unit name="g" />
+  </UnitSet>
+  <UnitSet type="19">
+    <Unit name="g" />
+  </UnitSet>
+  <UnitSet type="26">
+    <Unit name="m" />
+  </UnitSet>
+  <UnitSet type="27">
+    <Unit name="ft" unitSystem="English" />
+    <Unit name="m" unitSystem="Metric" />
+  </UnitSet>
+  <UnitSet type="29">
+    <Unit name="unitlessNoPrecision"/>
+  </UnitSet>
+  <UnitSet type="30">
+    <Unit name="unitlessTwoPrecision"/>
+  </UnitSet>
+  <UnitSet type="31">
+    <Unit name="unitlessFourPrecision"/>
+  </UnitSet>  
+  <UnitSet type="32">
+    <Unit name="mile" unitSystem="English" />
+    <Unit name="kilometer" unitSystem="Metric" />
+  </UnitSet>
+</UnitSets>

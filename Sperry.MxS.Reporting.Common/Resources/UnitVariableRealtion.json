@@ -1,0 +1,109 @@
+{
+  "Map": [
+    {
+      "variable": "Enabled",
+      "unit": "Unitless",
+      "DisplayName": "Enabled"
+    },
+    {
+      "variable": "Depth",
+      "unit": "Length",
+      "DisplayName": "Depth"
+    },
+    {
+      "variable": "Run",
+      "unit": "Unitless",
+      "DisplayName": "Run"
+    },
+    {
+      "variable": "Gx",
+      "unit": "Gravity Field",
+      "DisplayName": "Gx Raw"
+    },
+    {
+      "variable": "Gy",
+      "unit": "Gravity Field",
+      "DisplayName": "Gy Raw"
+    },
+    {
+      "variable": "Gz",
+      "unit": "Gravity Field",
+      "DisplayName": "Gz Raw"
+    },
+    {
+      "variable": "Bx",
+      "unit": "Magnetic Field",
+      "DisplayName": "Bx Raw"
+    },
+    {
+      "variable": "By",
+      "unit": "Magnetic Field",
+      "DisplayName": "By Raw"
+    },
+    {
+      "variable": "Bz",
+      "unit": "Magnetic Field",
+      "DisplayName": "Bz Raw"
+    },
+    {
+      "variable": "AzimuthType",
+      "unit": "Unitless",
+      "DisplayName": "Azimuth Type"
+    },
+    {
+      "variable": "PumpStatus",
+      "unit": "Unitless",
+      "DisplayName": "Pump Status"
+    },
+    {
+      "variable": "SagInclination",
+      "unit": "Angle",
+      "DisplayName": "Sag Inc"
+    },
+    {
+      "variable": "MWDInclination",
+      "unit": "Angle",
+      "DisplayName": "MWD Inc"
+    },
+    {
+      "variable": "MWDShortCollar",
+      "unit": "Angle",
+      "DisplayName": "MWD SC"
+    },
+    {
+      "variable": "MWDLongCollar",
+      "unit": "Angle",
+      "DisplayName": "MWD LC"
+    },
+    {
+      "variable": "DateTime",
+      "unit": "DateTime",
+      "DisplayName": "Date&Time"
+    },
+    {
+      "variable": "Date",
+      "unit": "Date",
+      "DisplayName": "Date"
+    },
+    {
+      "variable": "Time",
+      "unit": "Time",
+      "DisplayName": "Time"
+    },
+    {
+      "variable": "SerialNumber",
+      "unit": "Unitless",
+      "DisplayName": "Serial Number"
+    },
+    {
+      "variable": "RigTimeOffset",
+      "unit": "Unitless",
+      "DisplayName": "Survey Time Offset"
+    },
+    {
+      "variable": "Temperature",
+      "unit": "Temperature",
+      "DisplayName": "Temperature"
+    }
+  ]
+}
